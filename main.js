@@ -8,7 +8,7 @@ function addTable() {
 		let valueUpper = name[0].toUpperCase() + name.slice(1);
 
 		if (!document.querySelector('table')) {
-			createTable(valueUpper);
+			createTable();
 			createTr(valueUpper, quantity);
 			btnDelete();
 		}
@@ -18,7 +18,7 @@ function addTable() {
 	}
 }
 
-function createTable(valueUpper) {
+function createTable() {
 	let table = document.createElement('table');
 	table.innerHTML = '<thead><tr><th scope="col">#</th><th scope="col">Article</th><th scope="col">Quantité</th><th scope="col">Actions</th></tr></thead>'
 	if (document.body.hasAttribute('class')) {
