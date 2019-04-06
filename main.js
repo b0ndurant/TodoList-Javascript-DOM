@@ -69,3 +69,10 @@ function remove(context) {
 		context.parentNode.parentNode.remove();
 	}
 }
+
+function darkMode() {
+	document.body.classList.toggle('dark-mode');
+	if (document.getElementsByTagName('table')[0]) {
+		document.getElementsByTagName('table')[0].classList.toggle('dark-mode');
+	}
+}
