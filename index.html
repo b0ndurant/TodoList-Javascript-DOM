@@ -1,0 +1,62 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!--Font Awesome-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	<!--Bootstrap-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.4.0/css/bootstrap4-toggle.min.css" rel="stylesheet">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<title>ToDo List</title>
+</head>
+<body>
+	<div id="container" class="container">
+		<div class="text-right pt-3">
+			<label for="stackedCheck2" class="form-check-label">Dark Mode :</label>
+			<input type="checkbox" onchange="darkMode()" checked data-toggle="toggle" data-onstyle="primary" data-offstyle="light" data-on="off" data-off="on" >
+		</div>
+
+		<h1 class="text-center">ToDo List</h1>
+		<div class="row">
+			<div class="col-md-12">
+				<form id="myForm" onsubmit="addTable()">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="exampleFormControlInput1">Entrer votre article :</label>
+								<input type="text" class="form-control" id="name" placeholder="Votre Article" />
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="form-group">
+								<label for="name">Quantite :</label>
+								<input type="number" class="form-control" id="quantity" placeholder="Quantité" />
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-2">
+							<button class="btn btn-primary" type="submit">Ajouter</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<h2>Votre Liste</h2>
+
+	</div>
+	<script src="main.js"></script>
+
+	<!--Only for toggle-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.4.0/js/bootstrap4-toggle.min.js"></script>
+
+</body>
+</html>
