@@ -1,3 +1,13 @@
+let i = 1;
+function addTable() {
+	let name = document.getElementById("name").value;
+	let quantity = document.getElementById("quantity").value
+
+	if(name != '') {
+
+		let valueUpper = name[0].toUpperCase() + name.slice(1);
+
+		if (!document.querySelector('table')) {
 			createTable();
 			createTr(valueUpper, quantity);
 			btnDelete();
