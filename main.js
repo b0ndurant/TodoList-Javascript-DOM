@@ -55,3 +55,17 @@ function allRemove() {
 	document.getElementById('container').lastElementChild.remove();
 	i = 1;
 }
+
+function remove(context) {
+	let countTr = document.getElementsByTagName('tr').length;
+	let btnDelete = document.getElementById('container').lastElementChild;
+	if(countTr == 2) {
+		document.querySelector('table').remove();
+		btnDelete.remove();
+		i = 1;
+	}
+	else {
+		(context.parentNode.parentNode.nextSibling ) ? i : i--;
+		context.parentNode.parentNode.remove();
+	}
+}
