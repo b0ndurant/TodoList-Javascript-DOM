@@ -49,3 +49,9 @@ function btnDelete() {
 	btnDelete.setAttribute('onclick','allRemove()');
 	document.getElementById('container').append(btnDelete);
 }
+
+function allRemove() {
+	document.querySelector('table').remove();
+	document.getElementById('container').lastElementChild.remove();
+	i = 1;
+}
