@@ -1,14 +1,4 @@
-let i = 1;
-function addTable() {
-	let name = document.getElementById("name").value;
-	let quantity = document.getElementById("quantity").value
-
-	if(name != '') {
-
-		let valueUpper = name[0].toUpperCase() + name.slice(1);
-
-		if (!document.querySelector('table')) {
-			createTable(valueUpper);
+			createTable();
 			createTr(valueUpper, quantity);
 			btnDelete();
 		}
@@ -18,7 +8,7 @@ function addTable() {
 	}
 }
 
-function createTable(valueUpper) {
+function createTable() {
 	let table = document.createElement('table');
 	table.innerHTML = '<thead><tr><th scope="col">#</th><th scope="col">Article</th><th scope="col">Quantité</th><th scope="col">Actions</th></tr></thead>'
 	if (document.body.hasAttribute('class')) {
@@ -40,4 +30,12 @@ function createTr(valueUpper, quantity) {
 	table.append(tr);
 	document.getElementById("myForm").reset();
 	i++;
+}
+
+function btnDelete() {
+	let btnDelete = document.createElement('button');
+	btnDelete.textContent = "Supprimer la liste";
+	btnDelete.className = "btn btn-primary";
+	btnDelete.setAttribute('onclick','allRemove()');
+	document.getElementById('container').append(btnDelete);
 }
