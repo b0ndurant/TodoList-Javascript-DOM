@@ -1,0 +1,13 @@
+.line {
+	text-decoration: line-through;
+	text-decoration-color: #f30e0e;
+}
+
+.list {
+	list-style-type: none;
+}
+
+.dark-mode {
+	background-color: #524e4e;
+	color: #eae7e7;
+}
