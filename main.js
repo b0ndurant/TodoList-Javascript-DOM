@@ -75,7 +75,7 @@ function countArticle() {
 function btnDelete() {
 	let btnDelete = document.createElement('button');
 	btnDelete.textContent = "Supprimer la liste";
-	btnDelete.className = "btn btn-primary";
+	btnDelete.className = "delete btn btn-primary";
 	btnDelete.setAttribute('onclick','allRemove()');
 	document.getElementById('container').append(btnDelete);
 }
