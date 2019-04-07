@@ -18,25 +18,25 @@
 </head>
 <body>
 	<div id="container" class="container">
-		<div class="text-right pt-3">
+		<div class="text-right pt-3 pb-3">
 			<label for="stackedCheck2" class="form-check-label">Dark Mode :</label>
 			<input type="checkbox" onchange="darkMode()" checked data-toggle="toggle" data-onstyle="primary" data-offstyle="light" data-on="off" data-off="on" >
 		</div>
 
-		<h1 class="text-center">ToDo List</h1>
+		<h1>ToDo List</h1>
 		<div class="row">
 			<div class="col-md-12">
-				<form id="myForm" onsubmit="addTable()">
+				<form id="myForm" onsubmit="addTable();return false">
 					<div class="row">
 						<div class="col-md-6">
 							<div class="form-group">
-								<label for="exampleFormControlInput1">Entrer votre article :</label>
+								<label>Entrer votre article :</label>
 								<input type="text" class="form-control" id="name" placeholder="Votre Article" />
 							</div>
 						</div>
 						<div class="col-md-2">
 							<div class="form-group">
-								<label for="name">Quantite :</label>
+								<label>Quantité :</label>
 								<input type="number" min="0" class="form-control" id="quantity" placeholder="Quantité" />
 							</div>
 						</div>
